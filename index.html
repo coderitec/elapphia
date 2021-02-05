@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="others/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="others/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="others/css/main.css">
+    <link rel="stylesheet" href="others/lib/bootstrap/bootstrap-icons/bootstrap-icons.css">
+    <!-- UIKIT -->
+    <link rel="stylesheet" href="others/lib/uikit/css/uikit.min.css" />
+    <script src="others/lib/uikit/js/uikit.min.js"></script>
+    <script src="others/lib/uikit/js/uikit-icons.min.js"></script>
+    
+    <link rel="stylesheet" href="others/lib/animate.css">
+</head>
+<header>
+    <!-- Main Navbar -->
+    <nav class="uk-navbar" id="myNavbar">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active navbar-brand">
+                    <a href="others/index.html"><img src="others/img/logo/logo.svg" alt=""></a>
+                </li> 
+            </ul>
+        </div>
+        <div class="uk-navbar-right navCenter">
+            <ul class="uk-navbar-nav uk-visible@m nav-items">
+                <li><a class="nav-link active" id="navList1" href="others/index.html">home</a></li>
+                <li><a class="nav-link" id="navList2" href="others/about.html">about</a></li>
+                <li><a class="nav-link shop-link" id="navList3" href="others/services.html">services</a></li>
+                <li><a class="nav-link" id="navList4" href="others/contact.html">contact</a></li>
+            </ul>
+            <div class="navToggle">
+                <a href="#" class="uk-navbar-toggle toggleIcon uk-hidden@m" uk-toggle="target: #sidenav">
+                  <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" id="toggleIcon">
+    
+                  <g>
+                   <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                  </g>
+                  <g>
+                   <path id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+                  </g>
+                 </svg>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="uk-navbar-right" id="navNav">
+        </div> -->
+    </nav>
+</header>
+
+<div id="sidenav" uk-offcanvas="flip: true; mode: slide; overlay:true" class="uk-offcanvas">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav sideItems">
+            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s"><a class="nav-link" href="others/index.html"><span class="uk-margin-small-right" uk-icon="home"></span> home</a></li>
+            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s"><a class="nav-link" href="others/about.html"><span class="uk-margin-small-right" uk-icon="users"></span> about</a></li>
+            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"><a class="nav-link" href="others/services.html"><span class="uk-margin-small-right" uk-icon="info"></span> services</a></li>
+            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s"><a class="nav-link" href="others/contact.html"><span class="uk-margin-small-right" uk-icon="receiver"></span> contact</a></li>
+        </ul>
+    </div>
+</div>
+<body>
+  <div class="bg-overlay">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; autoplay: true;">
+
+          <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">
+            <li>
+                <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                    <img src="others/img/bg1.jpg" alt="" uk-cover>
+                </div>
+                <div class="uk-position-center-left uk-position-small uk-light c-caption">
+                    <h4 class="uk-margin-remove uk-heading-small wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s"> A team of young vibrant professionals with training in exporting sector</h4>
+                    <p class="uk-margin-remove wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">With our expertise in the exporting sector our experience and our global trade expertise is built to see your organisation succeed. </p>
+                    <a href="others/about.html" class="bannerLink wow fadeInRight" data-wow-duration="1s" data-wow-delay=".8s">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </li>
+              <li>
+                  <img src="others/img/bg2.jpg" alt="El-Apphia School Slide 2" uk-cover>
+                  <div class="uk-position-center-left uk-position-small uk-light c-caption">
+                      <h4 class="uk-margin-remove uk-heading-small wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">We export Agricultural Produce to Foreign Countries </h4>
+                      <p class="uk-margin-remove wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">Our trade expertise enables us to execute the supply of Agricultural Produce at the best quality and price for every qualified buyer.</p>
+                      <a href="others/services.html#agric" class="bannerLink wow fadeInRight" data-wow-duration="1s" data-wow-delay=".8s">Learn More <i class="bi bi-arrow-right"></i></a>
+                  </div>
+              </li>
+              <li>
+                  <img src="others/img/bg3.jpg" alt="El-Apphia School Slide 3" uk-cover>
+                  <div class="uk-position-center-left uk-position-small uk-light c-caption">
+                      <h4 class="uk-margin-remove uk-heading-small wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">We export Mineral Resources to Foreign Countries </h4>
+                      <p class="uk-margin-remove wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">Our trade expertise enables us to execute the supply of solid minerals at the best quality and price for every qualified buyer.</p>
+                      <a href="others/services.html#minerals" class="bannerLink wow fadeInRight" data-wow-duration="1s" data-wow-delay=".8s">Learn More <i class="bi bi-arrow-right"></i></a>
+                  </div>
+              </li>
+          </ul>
+          
+      
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+          
+          <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center slide-nav">
+              <li data-uk-slideshow-item="0"><a href=""></a></li>
+              <li data-uk-slideshow-item="1"><a href=""></a></li>
+              <li data-uk-slideshow-item="2"><a href=""></a></li>
+          </ul>
+      
+      </div>
+  </div>
+  
+    <div class="row1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>To help <span>organizations</span>, <span>cooperation</span> and <span>proprietors</span> achieve <span>easy</span> and <span>efficient</span> transactions till the delivery of their goods while stimulating consistence <span>expansion</span> of <span>Nigerian produce</span> all over the <span>world</span> and a center of excellence both home and abroad. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 row2Text">
+                    <h3 class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">Who are we?</h3>
+                    <p class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">El-Apphia is an exporting company that deals with agricultural, mineral and petroleum products. We are a team of young vibrant professionals with training in exporting sector... </p>
+                    <a href="others/about.html" class="row2Link wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-md-6 row2Img">
+                    <img class=" wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" src="others/img/row1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 row3Header">
+                    <h2>Organizational Values</h2>
+                    <p>These are our core ethics by which the company will abide by, no matter what. They inspire our employees' best efforts, they are expressed in all our operations.</p>
+                </div>
+            </div>
+            <div class="row row3Content">
+                <div class="col-lg-4 contentItem wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                    <img src="others/img/icons/teamwork.svg" alt="">
+                    <h3>Teamwork</h3>
+                </div>
+                <div class="col-lg-4 contentItem wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <img src="others/img/icons/respect.svg" alt="">
+                    <h3>Integrity and Respect</h3>
+                </div>
+                <div class="col-lg-4 contentItem wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="others/img/icons/time.svg" alt="">
+                    <h3>Timeliness and Efficiency</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 row3Link wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <a href="others/about.html#values">See More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 row4Header">
+                    <h2>Services</h2>
+                </div>
+            </div>
+            <div class="row row4Content">
+                <div class="col-md-6">
+                    <h4>Agricultural Produce</h4>
+                    <img src="others/img/agriculture.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4>Mineral Resources </h4>
+                    <img src="others/img/minerals.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 row3Link">
+                    <a href="others/services.html">More Details<i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 row5Header">
+                    <h2>We are ready to work with you.</h2>
+                    <p>We love to listen and we are eagerly waiting to talk to you regarding your project. <br> Get in touch with us today!</p>
+                </div>
+                <div class="col-lg-4 row5Link">
+                    <a href="others/contact.html">Get in Touch <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="row footer-nav">
+            <div class="col-lg-6">
+                <div class="nav-links">
+                  <a href="others/index.html">Home</a>
+                  <a href="others/about.html">About</a>
+                  <a href="others/services.html">Services</a>
+                  <a href="others/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="nav-icons">
+                    <a href="mailto:elapphialimited@gmail.com" class="uk-icon-button  uk-margin-small-right" uk-icon="mail"></a>
+                    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
+                    <a href="tel:08067714855" class="uk-icon-button  uk-margin-small-right" uk-icon="receiver"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-lg-6">
+                <div class="nav-link">
+                    <a href="others/index.html"><img src="others/img/logo/logo.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="copyright">
+                    <p class="h6"><span>&copy All right Reserved <script type="text/javascript">document.write(new Date().getFullYear());</script></span><a class="ml-2" href="others/index.html" target="_blank">El-Apphia Limited</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="others/img/logo/logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="others/lib/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="others/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<script>
+    (function ($)
+        { "use strict"
+        /*  Proloder */
+        $(window).on('load', function () {
+            $('#preloader-active').delay(450).fadeOut('slow');
+            $('body').delay(450).css({
+            'overflow': 'visible'
+        });
+        })
+    }
+    )(jQuery);
+</script>
+
+</body>
+</html>
